@@ -4,3 +4,16 @@ def hitung_total_panen(padi, jagung):
 padi_kg = 500
 jagung_kg = 350
 print("Total Hasil Panen (Kg):", hitung_total_panen(padi_kg, jagung_kg))
+
+def hitung_total_panen(padi, jagung):
+    return padi + jagung
+
+def hitung_diskon_panen(total_kg, persentase):
+    potongan = total_kg * (persentase / 100)
+    return total_kg - potongan
+
+padi_kg = 500
+jagung_kg = 350
+total = hitung_total_panen(padi_kg, jagung_kg)
+print("Total Hasil Panen (Kg):", total)
+print("Total Setelah Diskon 10% (Kg):", hitung_diskon_panen(total, 10))
