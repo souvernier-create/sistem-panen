@@ -1,0 +1,6 @@
+def hitung_total_panen(padi, jagung):
+    return padi + jagung
+
+padi_kg = 500
+jagung_kg = 350
+print("Total Hasil Panen (Kg):", hitung_total_panen(padi_kg, jagung_kg))
